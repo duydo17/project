@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script>
+      // Lấy giá trị lượt truy cập từ local storage
+      var visits = localStorage.getItem("visits") || 0;
+      
+      // Tăng biến đếm lượt truy cập
+      visits = parseInt(visits) + 1;
+      
+      // Lưu lại giá trị lượt truy cập vào local storage
+      localStorage.setItem("visits", visits);
+    </script>
+  </head>
+  <body>
+    <!-- Hiển thị lượt truy cập trên trang web -->
+    <p id="visits">Số lượt truy cập: <script>document.write(visits);</script></p>
+  </body>
+</html>
+Trong ví dụ này, chúng ta đã tạo một phần tử p với id là "visits" để hiển thị lượt truy cập. Chúng ta sử dụng thẻ script trong phần tử p để hiển thị giá trị của biến visits.
+
+
+
+
